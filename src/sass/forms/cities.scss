@@ -1,0 +1,53 @@
+.cities {
+  -webkit-border-radius:0px;
+  -moz-border-radius:0px;
+  border-radius:0px;
+  .modal-header {
+    border-bottom:0px;
+
+  }
+  .city-title {
+    text-align: center;
+    font-family: CalibriB,CalibriBIE,serif;
+    font-size: 25px;
+    width:100%;
+    margin-bottom:0px;
+  }
+  .modal-header {
+    text-align: center;
+  }
+  .modal-dialog {
+    width: 1100px;
+    max-width: 97%;
+  }
+  .modal-body {
+    position: relative;
+    padding: 15px;
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+      .column {
+        width: 300px;
+        padding-left: 20px;
+        position: relative;
+        min-height: 40px;
+        margin: 5px;
+        a {
+          color: #1565C0 !important;
+          display: block;
+          font-size: 20px;
+          line-height:1.2;
+        }
+        &:before {
+          content: attr(data-before);
+          position: absolute;
+          top: -5px;
+          left: -20px;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
