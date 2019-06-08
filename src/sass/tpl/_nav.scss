@@ -1,0 +1,18 @@
+.navbar {
+  &__appoirtment-btn {
+      margin-left: 15px;
+      color: #000;
+      font-family: Calibril,CalibrilIE,Sans-serif !important;
+      font-weight: 700;
+      width: 265px;
+      height: 47px;
+      background: url(/img/tpl/join-btn.min.png) no-repeat;
+      line-height: 47px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      background-size: cover;
+      padding: 0 0 0 30px;
+      vertical-align: top;
+      margin-top: 12px;
+  }
+}

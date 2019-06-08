@@ -36,7 +36,7 @@ var paths = {
     },
     clone: {
         js:['node_modules/bootstrap/dist/js/bootstrap.js', 'node_modules/jquery/dist/jquery.js'],
-        fonts:['src/sass/fonts/**']
+        fonts:'src/sass/fonts/**'
     }
 };
 
@@ -65,11 +65,14 @@ function browser(){
 function cloneJS(){
     return gulp.src(paths.clone.js)
         .pipe(gulp.dest(paths.scripts.dest))
+        .pipe(browserSync.reload({stream: true}))
 }
 
 function cloneFonts(){
     return gulp.src(paths.clone.fonts)
         .pipe(gulp.dest(paths.styles.dest + 'fonts'))
+        .pipe(browserSync.reload({stream: true}))
+
 }
 
 function html(){
