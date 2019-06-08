@@ -92,7 +92,7 @@ function js(){
 
 function images(){
     return gulp.src(paths.images.src)
-        .pipe(imagemin())
+        //   .pipe(imagemin())
         .pipe(gulp.dest(paths.images.dest))
         .pipe(browserSync.reload({stream: true}))
 }

@@ -1,0 +1,98 @@
+.headline{
+    &__text {
+      color: #fff;
+      font-size: 26px;
+      text-align: center;
+      padding-bottom: 10px;
+      margin-bottom: 5px;
+    }
+}
+.col-lg-bg__index-head {
+  background:url(/img/tpl/promo.min.png) no-repeat;
+  -webkit-background-size:100% auto;
+  background-size:80% auto;
+  background-position: bottom left;
+}
+.index-head {
+
+  &__advantages {
+    width:230px;
+    margin-left:40px;
+    li {
+      color: #fff;
+      font-size: 19px;
+      line-height: 17px;
+      margin: 5px 0;
+      position: relative;
+      list-style-type: none;
+      &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: -30px;
+          margin: -11px 0 0 0;
+          background: url(/img/tpl/check.png) 0 0 no-repeat;
+          width: 23px;
+          height: 23px;
+      }
+    }
+  }
+  .main-head-form {
+      width: 372px;
+      font-size: 30px;
+      text-shadow: 3px 2.598px 5px rgba(0,0,0,.35);
+      color: #fff;
+      margin: -7px 41px -26px 0;
+      padding: 0;
+      text-align: center;
+      font-family: CalibriB,CalibriBIE,serif;
+      form {
+          margin-left: 10px;
+          background: url(/img/tpl/action-bg.png) no-repeat;
+          background-size: 100% 175px;
+          padding: 25px 30px;
+          position: relative;
+          input[type="text"]{
+              font-size: 18px;
+              margin: 8px 5px;
+              border: 1px solid transparent;
+              padding: 2px 10px;
+              border-radius: 13px;
+              width: calc(100% - 15px);
+              height: 42px;
+              color: #fff;
+              background: rgba(242,242,242,0.3);
+              margin-bottom: 15px;
+          }
+        &:before {
+            content: '';
+            height: 220px;
+            width: 80px;
+            background: url(/img/tpl/action-arrow.png);
+            display: block;
+            position: absolute;
+            background-size: contain;
+            right: -37px;
+            top: -19px;
+        }
+        .input-button {
+          padding: 3px 10px 3px;
+          margin-top: 10px;
+          margin-left: 0;
+          font-size: 38px;
+          color: #000;
+          font-family: CalibriB,CalibriBIE,Sans-serif;
+          border: none;
+          background: url(/img/tpl/action-btn.png) 50% 50% #ffe42a;
+          background-size: cover;
+          border-radius: 61px;
+          margin: 35px -30px;
+          width: calc( 100% + 60px );
+          height: 50px;
+          line-height: 50px;
+          cursor: pointer;
+          animation: background_shadow_light 5s infinite;
+        }
+      }
+  }
+}
