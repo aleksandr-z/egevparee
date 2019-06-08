@@ -1,7 +1,16 @@
 @import '_fonts';
+@import '_defaults';
 @import 'tpl/_header';
+@import 'tpl/_nav';
 @import 'tpl/_footer';
+@import 'forms/cities.scss';
 
+* {
+  margin: 0;
+  padding: 0;
+  padding-right: 0px;
+  box-sizing: border-box;
+}
 body {
   width: 100%;
   font-family: Calibril,CalibrilIE,CalibriB,CalibriBIE,serif;

@@ -1,6 +1,88 @@
-body {
-  color:green;
-  p {
-    color:red;
+.top {
+  overflow: hidden;
+  &__bg {
+    background: url(/img/tpl/bg.jpg) no-repeat;
+    background-size:100% auto;
+  }
+}
+
+.header {
+  &__border-left-line {
+    position: relative;
+
+    &:before{
+      content:'';
+      position:absolute;
+      left:0px;
+      top:5%;
+      height:90%;
+      width:1px;
+      background: #fff;
+    }
+  }
+  &__top-menu {
+    ul {
+      margin-bottom:5px;
+      list-style-type: none;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      li{
+        a {
+          color:white;
+          font-size:20px;
+        }
+      }
+    }
+  }
+  &__change-city {
+    > span {
+      color:#fff;
+      font-size:18px;
+    }
+
+  }
+  .dropdown-toggle.city {
+    background: url(//egevpare.ru/wp-content/themes/paranauka-new/img/city-select.png) no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 220px;
+    margin-left: 20px;
+    height: 35px;
+    color: #fff;
+    border: none;
+    padding-left: 20px;
+    text-align: left;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: Calibril;
+    transition: padding,background .3s,.3s;
+    &:after {
+      content:none;
+    }
+    &:hover {
+      padding-left: 25px;
+      background-color: rgba(255,255,255,0.1);
+    }
+  }
+  &-info {
+    text-align: right;
+    &__phone a{
+        color: white;
+        font-size: 34px;
+        line-height: 1;
+        font-family: CalibriB,CalibriBIE,Sans-serif;
+        &:hover {
+          text-decoration: none;
+        }
+    }
+    &__callback a {
+        font-size: 22px;
+        color: #ffe42a;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+    }
   }
 }
