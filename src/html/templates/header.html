@@ -1,6 +1,6 @@
-<header>
+<header class="header pt-3">
     <div class="container">
-        <div class="row">
+        <div class="row mb-1">
             <div class="col-lg-8">
                 <div class="row">
                     <div class="col-md-6">
@@ -8,8 +8,8 @@
                             <img class="logo__img" src="/img/tpl/logo.png">
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="top-menu">
+                    <div class="col-md-6 header__border-left-line">
+                        <div class="header__top-menu">
                             <ul>
                                 <li><a href="#">Блог</a></li>
                                 <li><a href="#">Оплата</a></li>
@@ -17,7 +17,7 @@
                                 <li><a href="#">Вакансии</a></li>
                             </ul>
                         </div>
-                        <div class="change-city">
+                        <div class="header__change-city">
                             <span>Ваш город: </span>
                             <div class="dropdown-container" style="display:inline;">
                                 <button type="button" class="btn dropdown-toggle city" href="#modal-city" data-toggle="modal" aria-haspopup="true" aria-expanded="false">
@@ -29,9 +29,40 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="header__phone">+7 (495) 409-25-88</div>
-                <div class="header__callback"><a href="#">Закажите обратный звонок</a></div>
+                <div class="header-info">
+                    <div class="header-info__phone"><a href="tel:+74954092588">+7 (495) 409-25-88</a></div>
+                    <div class="header-info__callback"><a href="#myModal" data-toggle="modal">Закажите обратный звонок</a></div>
+                </div>
             </div>
         </div>
+        <nav class="mb-3 navmain navbar navbar-expand-lg">
+            <a href="#appoirtment" data-toggle="modal" class="navmain__appoirtment-btn">ЗАПИСАТЬСЯ СЕЙЧАС</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Курсы ЕГЭ<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Курсы ОГЭ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Все курсы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Цены</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
     </div>
 </header>
