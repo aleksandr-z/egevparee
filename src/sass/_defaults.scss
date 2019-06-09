@@ -9,6 +9,10 @@ body {
   font-family: Calibril,CalibrilIE,CalibriB,CalibriBIE,serif;
   overflow-x: hidden;
 }
+h1, h2, h3, h4, p.h2, p.h3  {
+  font-family: CalibriB,CalibriBIE,serif;
+
+}
 h1 {
   font-size: 33px;
   line-height: 40px;
@@ -21,4 +25,14 @@ h1 {
 }
 .ln-1 {
  line-height:1;
+}
+p.h2 {
+    font-size: 30px;
+    color: #1a1a1a;
+    padding: 40px 0 40px;
+    display: block;
+    text-align: center;
+}
+.hidden {
+  display: none;
 }

@@ -1,0 +1,22 @@
+.main-advantages {
+  text-align: center;
+  background: url(/img/tpl/why.jpg) no-repeat;
+  padding:20px 0px 20px;
+  .row > div {
+    margin-bottom:30px;
+  }
+  &__text {
+    font-size: 18px;
+    color: #1a1a1a;
+  }
+  &__title {
+    font-size: 24px;
+    color: #1ea2b9;
+    font-weight: bold;
+    font-family: CalibriB,CalibriBIE,serif;
+  }
+  img {
+      margin: 20px 0;
+  }
+
+}
