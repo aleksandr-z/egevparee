@@ -35,7 +35,7 @@ var paths = {
         images: 'src/images/**'
     },
     clone: {
-        js:['node_modules/bootstrap/dist/js/bootstrap.js', 'node_modules/jquery/dist/jquery.js'],
+        js:['node_modules/bootstrap/dist/js/bootstrap.js', 'node_modules/jquery/dist/jquery.js', 'src/clone/js/**'],
         fonts:'src/sass/fonts/**'
     }
 };

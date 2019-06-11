@@ -56,4 +56,65 @@
         }
 
     }
+    button.navbar-toggler {
+        background: url(/img/tpl/menu-icon.png) no-repeat;
+        background-size:85%;
+    }
+    @media (max-width:991px) {
+        height:50px;
+        padding: 7px 0px;
+        display: block;
+
+        &__appoirtment-btn {
+            width: 235px;
+            height: 35px;
+            line-height: 38px;
+            margin-left: 10px;
+            display: inline-block;
+        }
+        button.navbar-toggler {
+            float:right;
+            margin-top:-2px;
+        }
+        #navbarSupportedContent {
+            clear:both;
+        }
+        .navbar-nav {
+            right: 0;
+            position:relative;
+            z-index: 9999;
+            background-color: rgba(255,255,255,0.9);
+            top: 0px;
+            padding-left:0px;
+            width: 100%;
+            li {
+                width:100%;
+                border:none;
+                a {
+                    display: block;
+                    padding: 10px !important;
+                    margin: 0;
+                    width:100%;
+                    color: #000;
+                    height: auto;
+                    border-radius:0px;
+                    &:hover {
+                        font-size:16px;
+                        background: #617d77;
+                        color:white;
+
+                    }
+                }
+            }
+
+        }
+    }
+    @media (max-width:767px){
+        .navmain__appoirtment-btn {
+            width: 210px;
+            height: 35px;
+            line-height: 38px;
+            margin-left:10px;
+        }
+    }
 }

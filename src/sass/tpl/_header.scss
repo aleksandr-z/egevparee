@@ -2,11 +2,12 @@
   overflow: hidden;
   &__bg {
     background: url(/img/tpl/bg33.jpg) no-repeat;
-    background-size:100% auto;
+    background-size:cover;
   }
 }
 
 .header {
+
   &__border-left-line {
     position: relative;
 
@@ -66,6 +67,9 @@
     }
   }
   &-info {
+    @media (max-width:767px){
+     margin-top:10px;
+    }
     text-align: right;
     &__phone a{
         color: white;
@@ -75,14 +79,36 @@
         &:hover {
           text-decoration: none;
         }
+        @media (max-width:1200px){
+          font-size:28px;
+        }
     }
     &__callback a {
         font-size: 26px;
         color: #ffe42a;
         text-decoration: none;
+        @media (max-width:1200px){
+          font-size:20px;
+        }
         &:hover {
           text-decoration: underline;
         }
+    }
+  }
+  .logo {
+    img {
+      max-width:100%;
+    }
+  }
+  @media (max-width:991px){
+    .header__top-menu ul li a {
+      font-size:16px;
+    }
+    .header__change-city > span {
+      font-size:14px;
+    }
+    .dropdown-toggle.city {
+      width:150px;
     }
   }
 }

@@ -1,6 +1,8 @@
 .main-advantages {
   text-align: center;
   background: url(/img/tpl/why.jpg) no-repeat;
+
+  background-position: center top;
   padding:20px 0px 20px;
   .row > div {
     margin-bottom:30px;
@@ -17,6 +19,9 @@
   }
   img {
       margin: 20px 0;
+  }
+  @media (max-width:991px){
+    background:#f1f1f1;
   }
 
 }

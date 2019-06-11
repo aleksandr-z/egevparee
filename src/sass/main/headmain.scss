@@ -94,5 +94,13 @@
           animation: background_shadow_light 5s infinite;
         }
       }
+
+    @media (max-width:991px){
+      width:100%;
+      font-size:20px;
+      .action-title {
+        font-size:20px;
+      }
+    }
   }
 }
